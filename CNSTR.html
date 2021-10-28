@@ -1,0 +1,770 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn-tailwindcss.vercel.app/"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+         'sm': '640px',
+           // => @media (min-width: 640px) { ... }
+
+          'md': '768px',
+            // => @media (min-width: 768px) { ... }
+
+          'lg': '1024px',
+           // => @media (min-width: 1024px) { ... }
+
+          'xl': '1280px',
+           // => @media (min-width: 1280px) { ... }
+
+           },
+           container: {
+             center: true,
+             padding: '2rem'
+           },
+
+          extend: {
+            colors: {
+              white:'#ffffff',
+              blue: "#2B75E7",
+              gray: {
+                default: "#333333",
+                light: "#9CA3AF",
+              },
+
+              orange: {
+                light: "#F49D44",
+              },
+            },
+          },
+
+          backgroundColor: (theme) => ({
+            white: "#ffffff",
+            danger: "#EF645D",
+            orange: { dark: "#F49D44",deep:'#EF8518', light: "#F7EFE7" },
+            primary: {
+              dark: "#2B75E7",
+              light: "#E8EDF5",
+            },
+            sky: {
+              light: "#EFF6FF",
+              thin :'#E8EDF6',
+            },
+          }),
+
+          borderColor: (theme) => ({
+            danger: "#EF645D",
+            white : "#ffffff",
+            gray :'#E5E7EB'
+          }),
+          fontFamily: {
+            body: [ 'Montserrat'],
+          },
+        },
+      };
+    </script>
+<!-- 
+    <style type="text/tailwindcss">
+      .header-sec {
+        @apply bg-[#2B75E7];
+      }
+    </style> -->
+    
+  </head>
+  <body class="font-body">
+    <!-- nav-section -->
+    <section class="bg-cover bg-primary-dark header-sec">
+      <div class="container mx-auto px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+        <header class="flex justify-between items-center py-5">
+          <div>
+            <h1
+              class="text-4xl font-bold text-white tracking-wider"
+            >
+              CNSTR
+            </h1>
+          </div>
+
+          <div class="flex space-x-10 items-center ">
+            <nav class="hidden lg:block xl:block">
+              <div class="flex space-x-10 text-white">
+                <a class="text-base tracking-wider cursor-pointer">About</a>
+                <a class="text-base tracking-wider cursor-pointer">Projects</a>
+                <a class="text-base tracking-wider">Blog</a>
+                <a class="text-base tracking-wider">Contact</a>
+              </div>
+            </nav>
+
+                <button
+                class="hidden lg:block xl:block
+                  py-2
+                  px-6
+                  text-white
+                  font-semibold
+                  uppercase
+                  border border-solid border-gray-100
+                  rounded-lg
+                "
+              >
+                contact us
+              </button>
+          </div>
+          <div class="lg:hidden xl:hidden block">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </div>
+         </header>
+
+        <div
+          class="
+            grid grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-2
+            xl:grid-cols-2
+            gap-4 xl:gap-24
+            py-20
+            justify-between
+            items-center
+          "
+        >
+          <div class="flex flex-col justify-between space-y-8">
+            <h4 class="uppercase text-orange-light">Construction</h4>
+            <h2
+              class="
+                font-bold 
+                lg:text-7xl
+                xl:text-8xl
+                sm:text-7xl
+                text-white
+                md:text-6xl
+                text-6xl
+                text-white
+                max-w-md
+              "
+            >
+              Modern Building Company
+            </h2>
+            <button
+              class="
+                w-44
+                mt-10
+                border border-danger
+                hover:border-red-800
+                bg-danger
+                py-2
+                px-5
+                rounded-lg
+                uppercase
+                text-white
+              "
+            >
+              Contact us
+            </button>
+          </div>
+           
+           <div>
+            <img src="https://i.ibb.co/6nztN1t/Group-5.png" alt="Group-5" border="0">
+           </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class=" xl:py-20 lg:py-20 md:py-20 py-16 container mx-auto px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-2
+          xl:grid-cols-2
+          gap-16
+          md:gap-16
+          lg:gap-24
+          xl:gap-24
+          items-center
+          mb-10
+          
+        "
+      >
+        <div className="ml-2 ">
+          <img src="https://i.ibb.co/Z1WCGF9/Group-3.png" alt="Group-3" border="0">
+        </div>
+
+        <div
+          class="
+            flex flex-col
+            space-y-6
+            lg:space-y-5
+            md:space-y-5
+            xl:pt-20
+            lg:pt-20
+            md:pt-20
+            pt-0
+            px-3
+
+          "
+        >
+          <h4
+            class="
+              font-display
+              uppercase
+              text-lg text-blue
+              font-bold
+              tracking-wider
+            "
+          >
+            About Us
+          </h4>
+          <h2
+            class="
+              text-gray-default
+              font-bold
+              sm:text-5xl text-[44px]
+              md:text-[44px]
+              lg:text-[50px]
+              max-w-[22rem]
+              leading-none
+              lg:leading-none
+            "
+          >
+            We Build Your Dreams
+          </h2>
+          <p
+            class="
+              font-display
+              text-xl text-gray-default
+              max-w-[30rem]
+              leading-tight
+            "
+          >
+            The sky was cloudless and of a deep dark blue. The spectacle before
+            us was indeed sublime.
+          </p>
+          <div class="flex lg:flex-row xl:flex-row md:flex-row flex-col lg:space-x-8 xl:space-x-8 md:space-x-8 space-y-2 py-1 ">
+            <div class="flex items-center space-x-4">
+              <span class="h-auto bg-primary-light rounded-full p-3 xl:p-3 md:p-1 lg:p-3 ">
+                <img
+                  src="https://i.ibb.co/C8VPZjb/Shape-5.png"
+                  alt="Shape-5"
+                  border="0"
+                  class="w-8 "
+                />
+              </span>
+              <p class="text-base text-gray-default">Engineering</p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <span class="h-auto bg-orange-light rounded-full p-3 xl:p-3 md:p-1 lg:p-3 ">
+                <img
+                  src="https://i.ibb.co/QrGMfjC/Shape-6.png"
+                  alt="Shape-5"
+                  border="0"
+                  class="w-8"
+                />
+              </span>
+              <p class="text-base text-gray-default">Renovation</p>
+            </div>
+          </div>
+          <button
+            class="
+              uppercase
+              py-3
+              text-center
+              bg-orange-dark
+              w-40
+              rounded-md
+              text-white
+              tracking-wider
+            "
+          >
+            explore
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Service -->
+
+    <section class=" mt-8">
+      <div class="container mx-auto xl:py-20 lg:py-20 md:py-20 py-3  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+      <div class="text-center pb-14">
+        <h4 class="text-blue font-bold tracking-widest text-lg uppercase pb-5">
+          Our Service
+        </h4>
+        <h1 class="text-gray-default font-bold xl:text-[56px] lg:text-[56px] md:text-5xl text-5xl">We Do The Work</h1>
+      </div>
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-3
+          lg:grid-cols-3 
+          gap-8 justify-between 
+        "
+      >
+        <div class="card">
+          <div class="">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/QcjXZnp/Group-19.png" alt="Group-19" border="0"></a>  
+            <div class="card-body flex flex-col space-y-4 py-5 xl:pl-10 lg:pl-10 md:pl-8 pl-8">
+              <h4 class="text-2xl text-gray-default font-bold ">Design</h4>
+               <p class="text-base text-gray-light leading-loose max-w-[20rem]">
+                 I shall see the face of Mars, anyhow, and that will be a rare
+                 experience.
+                </p>
+                <p class="text-base text-gray-default tracking-wider">Explore</p>
+              </div>
+            </div>    
+            </div>
+
+
+        <div class="card">
+          <div>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/NmhDtx8/Group-4.png" alt="Group-4" border="0"></a> </div>
+          <div class="pl-3 card-body flex flex-col space-y-4 py-5 ">
+            <h4 class="text-2xl text-gray-default font-bold">Renovation</h4>
+            <p class="text-base text-gray-light leading-loose lg:max-w-[16rem] sm:max-w-[16rem] md:max-w-[10rem]">
+              Anyhow, and that will be a rare experience a view.
+            </p>
+            <p class="text-base text-gray-default tracking-wider">
+              Get Started
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.ibb.co/Zzz03Bf/Group-7.png" alt="Group-7" border="0">
+          </div>
+          <div class="pl-3 card-body flex flex-col space-y-4 py-5 ">
+            <h4 class="text-2xl text-gray-default font-bold">Managment</h4>
+            <p class="text-base text-gray-light leading-loose max-w-[20rem]">
+              That will be a rare experience seems to me that a view of the
+              heavenly.
+            </p>
+            <p class="text-base text-gray-default tracking-wider">Learn More</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Featured -->
+    <section class=" mt-20 relative ">
+      <div class="container mx-auto bg-white z-10 shadow-2xl rounded-xl  lg:p-20 xl:p-20 md:p-20 p-5 ">
+      <div class="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-8 px-2 justify-between items-center ">
+        <div class="flex flex-col xl:space-y-6 lg:space-y-4 md:space-y-3 space-y-4">
+          <h4 class="text-lg uppercase text-blue font-bold">Featured</h4>
+          <h1 class="lg:text-5xl xl:text-[56px] 2xl:text[px] md:text-4xl sm:text-[56px] text-5xl uppercase text-gray-default font-bold max-w-[26rem]
+           md:leading-none lg:leading-tight">Modern
+            Hotel Home</h1>
+            <h4 class="lg:text-2xl md:text-lg sm:text-2xl text-lg text-gray-default font-bold pt-2">Future Proofing a Modern</h4>
+            <p class="text-base text-gray-light leading-loose md:leading-6 max-w-[26rem] py-3">A peep at some distant orb has power to raise and purify our thoughts like a strain of sacred music, 
+              or a noble picture, or a passage from the grander poets.</p>
+            <button class="uppercase py-3 text-center bg-orange-dark w-40 rounded-md text-white">Explore</button>
+        </div>
+        <div class="card">
+          <div>
+            <img src="https://i.ibb.co/W5c7pkG/Group-10.png" alt="Group-10" border="0">
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+
+    <!-- Cases -->
+
+    <section class="bg-sky-light bg-cover -mt-64 py-20">
+      <div class="mx-auto container pt-96  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+          <div class="text-center pb-14">
+            <h4 class="text-blue uppercase font-bold text-xl">Our Cases</h4>
+            <h2 class="xl:text-[56px] lg:text-[56px] md:text-[56px] sm::text-5xl text-4xl  font-bold py-5">Other Projects</h2>
+          </div>
+          <div class="flex space-x-5">
+            <div>
+              <img src="https://i.ibb.co/3C5VWBd/Bitmap-38.png" alt="Bitmap-38" border="0" class="w-full h-[368px]">
+            </div>
+            <div>
+              <img src="https://i.ibb.co/DVVjsj0/Bitmap-39.png" alt="Bitmap-38" border="0" class="w-full h-[368px]">
+              <h2 class="xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold text-gray-default">Heath Facility</h2>
+              <p class="text-base text-gray-light">Construction</p>
+            </div>
+            <div class="hidden md:block lg:block xl:block">
+              <img src="https://i.ibb.co/yp0MQ6t/Bitmap-40.png" alt="Bitmap-38" border="0" class="w-full h-[368px]">
+              <h2 class="xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold  text-gray-default">Maine Modernity</h2>
+              <p class="text-base text-gray-light ">Construction</p>
+            </div>
+            <div class="hidden md:block lg:block xl:block">
+              <img src="https://i.ibb.co/j3520f8/Bitmap-41.png" alt="Bitmap-38" border="0" class="w-full h-[368px]">
+              <h2 class="xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold  text-gray-default">Urban Living</h2>
+              <p class="text-base text-gray-light ">Construction</p>
+            </div>
+            <div class="hidden md:block lg:block xl:block">
+              <img src="https://i.ibb.co/zSKXcVt/Bitmap-42.png" alt="Bitmap-38" border="0" class="w-full h-[368px]">
+              <h2 class="xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold  text-gray-default">Concrete House</h2>
+              <p class="text-base  text-gray-light">Construction</p>
+            </div>
+            <div>
+              <img src="https://i.ibb.co/BrzTDsF/Bitmap-43.png" alt="Bitmap-38" border="0" class="w-full h-[368px]">
+              <h2 class="xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold  text-gray-default">Maine Modernity</h2>
+              <p class="text-base text-gray-light ">Construction</p>
+            </div>
+            
+          </div>
+          <img class=" mx-auto pt-14" src="https://i.ibb.co/FncY1j7/page.png" alt="page" border="0">
+        </div>
+      </div>
+    </section>
+
+
+       <!-- team -->
+
+       <section class="bg-sky-light py-20 ">
+        <div class=" mx-auto container px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+        <div class="font-bold text-center py-16">
+          <h2 class="text-xl text-blue uppercase"> Teams</h2>
+          <h4 class="text-5xl pt-5">Our Teams</h4>
+        </div>
+        <div class="grid gap-10">
+  
+  
+       <div>
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:gap-10 lg:gap-10 md:gap-12 gap-10">
+  
+            <div class="bg-white shadow-lg rounded-lg px-10 ">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-0">
+                <div class=" flex flex-col space-y-2 py-8">
+                 <div class="pb-10 "> 
+                  <h2 class="font-bold text-2xl text-gray-default">Marco Alves</h2>
+                  <p class="text-gray-light">Engineer</p>
+                 </div>
+                  <p class="text-xl text-gray-default">View Profile</p>
+                </div>
+                 <div class="relative xl:top-[77px] lg:top-[105px] md:top-[164px]" >
+                  <img  class=" "src="https://i.ibb.co/Yd2q8JC/Group-11.png" alt="Group-11" border="0">
+                 </div>
+               </div>
+            </div>  
+            <div class="bg-white shadow-lg rounded-lg px-10 ">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-1">
+                <div class=" flex flex-col space-y-2 py-8">
+                 <div class="pb-10"> 
+                  <h2 class="font-bold text-2xl text-gray-default">Marco Alves</h2>
+                  <p class="text-gray-light">Engineer</p>
+                 </div>
+                  <p class="text-xl text-gray-default">View Profile</p>
+                </div>
+                <div class="relative xl:top-[77px] lg:top-[105px] md:top-[164px]" >
+                  <img  class=" "src="https://i.ibb.co/Yd2q8JC/Group-11.png" alt="Group-11" border="0">
+                 </div>
+               </div>
+            </div>  
+  
+            </div>
+  
+          </div>
+  
+        <div>
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:gap-10 lg:gap-10 md:gap-8 gap-10">
+  
+            <div class="bg-white shadow-lg rounded-lg px-10 ">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-0">
+                <div class=" flex flex-col space-y-2 py-8">
+                 <div class="pb-10 "> 
+                  <h2 class="font-bold text-2xl text-gray-default">Marco Alves</h2>
+                  <p class="text-gray-light">Engineer</p>
+                 </div>
+                  <p class="text-xl text-gray-default">View Profile</p>
+                </div>
+                 <div class="relative xl:top-[77px] lg:top-[105px] md:top-[164px]" >
+                  <img  class=" "src="https://i.ibb.co/Yd2q8JC/Group-11.png" alt="Group-11" border="0">
+                 </div>
+               </div>
+            </div>  
+            <div class="bg-white shadow-lg rounded-lg px-10 ">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-1">
+                <div class=" flex flex-col space-y-2 py-8">
+                 <div class="pb-10"> 
+                  <h2 class="font-bold text-2xl text-gray-default">Marco Alves</h2>
+                  <p class="text-gray-light">Engineer</p>
+                 </div>
+                  <p class="text-xl text-gray-default">View Profile</p>
+                </div>
+                <div class="relative xl:top-[77px] lg:top-[105px] md:top-[164px]" >
+                  <img  class=" "src="https://i.ibb.co/Yd2q8JC/Group-11.png" alt="Group-11" border="0">
+                 </div>
+               </div>
+            </div>  
+  
+            </div>
+  
+         </div>
+          <button class="text-lg py-2 px-5 bg-orange-dark my-5 mx-auto w-36 rounded-lg text-white">SEE ALL</button>
+       </div>
+      </section>
+  
+
+    <!-- Testimoials -->
+    <section class="bg-sky-light">
+      <div class="container mx-auto  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-16 lg:gap-24 md:gap-20 gap-10 items-center">
+          
+          <div class="">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/PQxQLp6/Group-15.png" alt="Group-15" border="0"></a>
+           </div>
+
+          <div class="flex-rows lg:space-y-6 xl:space-y-10 space-y-6 xl:px-0 lg:px-0 md:px-0 px-2">
+            <h4 class="text-2xl md:text-xl font-bold text-blue uppercase">Testimonial</h4>
+            <h2 class="xl:text-[56px] lg:text-[56px] md:text-[48px] text-4xl font-bold text-gray-default max-w-xs leading-none">Get Better
+              Experience</h2>
+            <p class="text-base leading-loose md:leading-6 max-w-sm">"Peep at some distant orb has power to raise and purify our thoughts like 
+              a strain of sacred music, or a noble picture, or a passage from the grander poets."</p>
+            <img src="https://i.ibb.co/5jNbM4v/arrow.png" alt="arrow" border="0">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    
+    <!-- Start Today -->
+
+    <section class="bg-sky-light ">
+      <div class="container mx-auto xl:py-5 lg:py-5 md:py-5  py-2 px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+        <div class="text-center py-10">
+          <h4 class="text-2xl font-bold text-gray-default">Start Today</h4>
+          <h2 class="xl:text-[56px] lg:text-[56px] text-5xl font-bold text-gray-default py-5">Work With The Best</h2>
+          <button class="text-lg py-3 text-center bg-orange-dark my-5 mx-auto w-40 rounded-lg text-white tracking-wider">Contact Us</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 items-center pt-16 ">
+
+          <div class="bg-white shadow-xl rounded-l-lg  lg:p-20 xl:p-20 md:p-8 p-16">
+            <h4 class="text-2xl font-bold text-gray-default">General</h4>
+            <h2 class="text-[56px] font-bold text-gray-default">12k</h2>
+            <a class="text-blue xl:text-xl lg:text-xl md:text-lg text-xl uppercase font-bold ">Contracting</a>
+          </div>
+
+          <div class="bg-white shadow-xl relative  lg:p-20 xl:p-20 md:p-8 p-16  ">
+            <h4 class="text-2xl md:text-xl font-bold text-gray-default">Construction</h4>
+            <h2 class="text-[56px] font-bold text-gray-default">90+</h2>
+            <a class="text-blue xl:text-xl lg:text-xl md:text-lg text-xl uppercase font-bold ">Managment</a>
+          </div>
+
+          <div class="bg-white shadow-xl rounded-lg lg:px-20 xl:px-20 md:px-10 px-20 lg:py-24 lg:py-24 md:py-12 py-20 md:bg-danger lg:bg-danger xl:bg-danger  ">
+            <h4 class="text-2xl font-bold lg:text-white xl:text-white md:text-white text-gray-default">Design</h4>
+            <h2 class="text-[56px] font-bold lg:text-white xl:text-white md:text-white text-gray-default">73%</h2>
+            <a class=" xl:text-xl lg:text-xl md:text-lg text-xl uppercase text-orange-light font-bold pt-3">Build</a>
+          </div>
+
+          <div class="bg-white shadow-xl relative  lg:p-20 xl:p-20 md:p-8 p-16">
+            <h4 class="text-2xl font-bold text-gray-default">Special</h4>
+            <h2 class="text-[56px] font-bold text-gray-default">73</h2>
+            <a class="text-blue  xl:text-xl lg:text-xl md:text-lg text-xl uppercase font-bold ">Projects</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- OUR BLOG -->
+    <section class="bg-white py-20 -mt-36">
+      <div class="container mx-auto  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3 pt-48">
+        <div class="text-center py-10">
+          <h4 class="text-2xl font-bold text-blue uppercase">Our Blog</h4>
+          <h2 class="xl:text-[56px] lg:text-[56px] text-5xl font-bold text-gray-default pt-3">Latest Articles</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10 items-center py-10">
+          <div>
+            <img src="https://i.ibb.co/55bC1Bb/Bitmap-49.png" alt="Bitmap-38" border="0" class="w-[370px] h-[272px]">
+            <div class="py-6">
+              <p class="text-base text-gray-light">Technology</p>
+              <h2 class="py-5 xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold text-gray-default max-w-xs">Though the gravity still dragged at him </h2>
+              <p class="text-base text-gray-light">7 March, 2020</p>  
+            </div>
+           </div>
+           <div>
+            <img src="https://i.ibb.co/9v6wTvZ/Bitmap-50.png" alt="Bitmap-38" border="0" class="w-[370px] h-[272px]">
+            <div class="py-6">
+              <p class="text-base text-gray-light">Technology</p>
+              <h2 class="py-5 xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold text-gray-default max-w-xs">Though the gravity still dragged at him </h2>
+              <p class="text-base text-gray-light">7 March, 2020</p>  
+            </div>
+           </div>
+           <div>
+            <img src="https://i.ibb.co/5KFdxKc/Bitmap-51.png" alt="Bitmap-38" border="0" class="w-[370px] h-[272px]">
+            <div class="py-6">
+              <p class="text-base text-gray-light">Technology</p>
+              <h2 class="py-5 xl:text-2xl lg:text-2xl md:text-lg text-lg font-bold text-gray-default max-w-xs">Though the gravity still dragged at him </h2>
+              <p class="text-base text-gray-light">7 March, 2020</p>  
+            </div>
+           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Consultation -->
+    <section class="xl:pt-20 lg:pt-20 md:pt-20 pt-0">
+      <div class="container mx-auto  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3 pb-16">
+        <div class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 ">
+          <div class="col-span-2 w-5/6">
+            <div>
+              <div class="pb-10 md:pb-8">
+                <h4 class="text-blue uppercase">Free Consultation</h4>
+                <h2 class="text-gray-default text-6xl md:text-5xl font-bold pt-2">Get A Quote</h2>  
+              </div>
+  
+            <div class="flex justify-between items-center space-x-5 md:space-x-4">
+              
+              <input class="appearance-none block w-full text-gray-default border border-gray rounded py-3 md:py-2 px-4 mb-3 leading-tight" id="grid-first-name" type="text" placeholder="Name">
+              <input class="appearance-none block w-full text-gray-default border border-gray  rounded py-3 md:py-2 px-4 mb-3 leading-tight" id="grid-email" type="email" placeholder="Email">
+            </div>
+            <div class="flex justify-between items-center  md:space-x-4 space-x-5 my-2">
+              <input class=" w-1/2 appearance-none block text-gray-default border  border-gray  rounded py-3 md:py-2 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-number" type="number" placeholder="Phone">
+
+              <div class=" relative w-1/2">
+                <select class="block appearance-none w-full bg-white text-gray-default  border  border-gray  px-4 py-3 md:py-2 pr-8 mb-3 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                  <option>Service</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+              </div>         
+            </div>
+            <div>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border  border-gray  rounded pt-5 pb-16 md:pb-10 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Message">
+            </div>        
+            
+            <button class="bg-orange-dark text-white font-bold py-3 px-10 rounded tracking-wider my-5" type="button">
+              Submit
+            </button>
+
+           </div>
+          </div>
+          <div>
+            <img src="https://i.ibb.co/fNLPrR1/Group-17.png" alt="Group-17" border="0">
+          </div>
+          <!-- <div class="bg-cover xl:px-28 xl:py-28 lg:px-16 lg:py-28 md:px-5 md:py-28 sm:py-20 sm:px-32 px-16 py-20 lg:w-full lg:h-full xl:w-full xl:h-full md:w-full md:h-full w-11/12 h-96" 
+          style="background-image: url('https://i.ibb.co/g3FqjS3/map.png');" >
+               <div class="bg-white relative">
+                  <div class="bg-danger w-20 h-20 py-5 px-6 relative -top-10 2xl:left-24 xl:left-16 lg:left-16 md:left-16 sm:left-24 left-16 rounded-full">
+                    <img class="" src="https://i.ibb.co/Rg64BMC/Shape-12.png" alt="Shape-12" border="0">
+                  </div>
+                  <div class="px-8 max-w-xs pb-8 text-center">
+                    <h5 class="text-xl pb-2">Our Office</h5>
+                    <p class="max-w-xs text-[14px]">Construct Inc. 42 Fifth st., 
+                      Los Angeles, USA</p>
+                  </div>
+               </div>
+              </div> -->
+        </div>
+  
+      </div>
+    </section>
+
+    <!-- NEWS LETTER -->
+    <section class="bg-orange-dark mt-16 w-full bg-cover">
+      <div class="container mx-auto  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols:3 xl:grid-cols-3 gap-6 justify-between items-center">
+          <div class="col-span-2 lg:flex xl:flex md:flex flex-cols items-center">
+            <div class="mr-8 "><img src="https://i.ibb.co/r7RMWQw/Group-18.png" alt="Group-18" border="0"></div>
+            <!-- <div class="w-24 h-24 bg-danger rounded-full mr-8">
+              <img class="p-8" src="https://i.ibb.co/Yjdgxgq/Shape-11.png" alt="Shape-11" border="0">
+            </div> -->
+            <div class=" text-white xl:pt-0 lg:p-0 md:pt-0 pt-5">
+              <h2 class=" font-bold text-3xl uppercase pb-2">Our Newsletter</h2>
+              <p >The sky was cloudless and of a deep dark blue.</p>
+            </div>
+          </div>
+
+          <div class=" lg:flex xl:flex md:flex flex-cols items-center py-2">
+                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-3 px-4 rounded" type="email" placeholder="Your email" aria-label="Full name">
+                <button class="mt-5 md:mt-0 xl:mt-0 lg:mt-0 bg-danger hover:border-teal-700 xl:w-auto lg:w-auto md:w-auto w-full text-white py-3 px-5 rounded" type="button">
+                  Subscribe                
+                </button>
+              </div>
+            
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+   <section class="bg-primary-dark ">
+    <div class="container mx-auto  px-3 xl:px-2 lg:px-2 md:px-2 sm:px-3">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 sm:grid-cols-1
+                  py-5 px-2">
+
+                    <div  class="px-8 text-4xl pb-16 pt-5 md:pb-1 text-white">
+                        <h1 class="" >CNSTR</h1>
+                        <p class="text-lg pt-5">The sky was cloudless and of a deep dark blue. The spectacle before us was indeed sublime.</p>
+                    </div>
+
+                    <div class="md:pl-20 pl-16">
+                        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 my-5">
+                            <div class="md:p-2 uppercase text-orange-light text-xl pb-8">Menu</div>
+                            <div class="md:p-2 text-gray-200 py-1">About</div>
+                            <div class="md:p-2 text-gray-200 py-1">Projects</div>
+                            <div class="md:p-2 text-gray-200  py-1">BLog</div>
+                            <div class="md:p-2 text-gray-200 py-1">Contact</div>
+                        </div>
+                    </div>
+                    <div class="md:pl-20 pl-16">
+                        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 my-5">
+                            <div class="md:p-2 uppercase text-orange-light text-xl pb-8">Service</div>
+                            <div class="md:p-2 py-1 text-gray-200">Design</div>
+                            <div class="md:p-2 py-1 text-gray-200">Renovation</div>
+                            <div class="md:p-2 py-1 text-gray-200">Managment</div>
+                        </div>
+                    </div>
+                    <div class=" pl-16">
+                        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 my-5">
+                            <div class=" text-xl text-white">Social</div>
+                            <div class="py-5">
+                              <img src="https://i.ibb.co/5xgxHXx/social.png" alt="social" border="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="text-gray-light" style="border: '0.5px solid'"  />
+
+                <footer class=" flex md:flex-row flex-col md:py-10 lg:py-10 py-8">
+
+                    <div class="flex-1 bd-highlight px-10">
+                        <div class="leading-loose flex-grow-1 bd-highlight text-white">
+                            Copyright © 2020. All Rights Reserved.
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row md:flex-row md:px-24 px-8 py-5 md:py-0 justify-between">
+                        <p class=" text-white tracking-tighter" >Terms of Use</p>
+                        <p class=" text-white  md:pl-10 pl-32 tracking-tighter">Privacy Policy</p>
+                    </div>
+                </footer>
+
+            </div>
+          </section>
+
+  </body>
+</html>
